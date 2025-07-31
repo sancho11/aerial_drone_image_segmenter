@@ -149,12 +149,15 @@ To run the project:
 ```bash
 #For running the notebook pipeline using jupyter notebook
 jupyter notebook
+
 #For training a model using python
 python train.py
+
 #For running evaluation metrics on a trained model
-python evaluate.py path/to/model
+python evaluate.py --ckpt-path /path/to/your/checkpoint.pt
+
 #For running classification on a single image.
-python infierence.py path/to/model path/to/image
+python infer.py --ckpt-path ./path/to/your/checkpoint.pt --image-path /path/to/image --save-color
 ```
 
 ### Training
